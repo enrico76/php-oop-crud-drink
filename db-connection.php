@@ -2,11 +2,11 @@
   $servername = 'localhost';
   $username = 'root';
   $password = '';
-  $dbname = 'bevanda';
+  $dbname = 'bar';
 
   $conn = new mysqli($servername, $username, $password, $dbname);
 
-  if ($conn -> connetct_error) {
+  if ($conn -> connect_error) {
     var_dump('error connecting db');
     var_dump($conn);
     die();
