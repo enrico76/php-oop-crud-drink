@@ -25,37 +25,37 @@
     public function getNome() {
       return $this -> nome;
     }
-    public function setNome() {
+    public function setNome($nome) {
       $this -> nome = $nome;
     }
     public function getMarca() {
       return $this -> marca;
     }
-    public function setMarca() {
+    public function setMarca($marca) {
       $this ->  marca = $marca;
     }
     public function getPrezzo() {
       return $this -> prezzo;
     }
-    public function setPrezzo() {
+    public function setPrezzo($prezzo) {
       $this ->  prezzo = $prezzo;
     }
     public function getExp() {
       return $this -> expire;
     }
-    public function setExp() {
+    public function setExp($expire) {
       $this ->  expire = $expire;
     }
     public function __toString() {
-      return $this -> getId() . " "
-                     . getNome() . " "
-                     . getMarca() . " "
-                     . getPrezzo() . " "
-                     . getExp();
+      return     $this -> getId() . " " .
+                 $this ->  getNome() . " " .
+                 $this ->  getMarca() . " " .
+                 $this ->  getPrezzo() . " " .
+                 $this ->  getExp();
     }
 
   }
-echo "hello";
+
 
 
  ?>
